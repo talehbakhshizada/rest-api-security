@@ -41,8 +41,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .authorities("USER", "ADMIN")
                 .scopes("read", "write")
                 .resourceIds("user_rest_api")
-            //    .accessTokenValiditySeconds(5000)
-            //    .refreshTokenValiditySeconds(50000)
                 .secret(passwordEncoder.encode("secret"));
     }
 
